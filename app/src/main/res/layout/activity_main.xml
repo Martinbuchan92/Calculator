@@ -8,47 +8,90 @@
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
-    <GridLayout
+    <EditText
+        android:id="@+id/txtInput"
         android:layout_width="0dp"
-        android:layout_height="270dp"
-        android:id="@+id/gridLayout"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="42dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreviousInput"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/txtPreviousInput"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="158dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="42dp"
-        android:layout_marginRight="42dp">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="4"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:targetApi="lollipop">
 
         <Button
             android:id="@+id/btnSeven"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/_7"
             tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="335dp" />
+            tools:layout_editor_absoluteY="335dp"
+            tools:targetApi="lollipop" />
 
         <Button
             android:id="@+id/btnEight"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/_8"
             tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="335dp" />
+            tools:layout_editor_absoluteY="335dp"
+            tools:targetApi="lollipop" />
 
         <Button
             android:id="@+id/btnNine"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/_9"
             tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="335dp" />
+            tools:layout_editor_absoluteY="335dp"
+            tools:targetApi="lollipop" />
 
         <Button
             android:id="@+id/btnDivide"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/divide"
@@ -57,6 +100,7 @@
 
         <Button
             android:id="@+id/btnClear"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/cls"
@@ -65,6 +109,7 @@
 
         <Button
             android:id="@+id/btnFour"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_column="0"
@@ -75,6 +120,7 @@
 
         <Button
             android:id="@+id/btnFive"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/_5"
@@ -83,6 +129,7 @@
 
         <Button
             android:id="@+id/btnSix"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/_6"
@@ -91,6 +138,7 @@
 
         <Button
             android:id="@+id/btnMultiply"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/multiply"
@@ -99,6 +147,7 @@
 
         <Button
             android:id="@+id/btnModulo"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/modulo"
@@ -107,6 +156,7 @@
 
         <Button
             android:id="@+id/btnOne"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_column="0"
@@ -117,6 +167,7 @@
 
         <Button
             android:id="@+id/btnTwo"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/_2"
@@ -125,6 +176,7 @@
 
         <Button
             android:id="@+id/btnThree"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/_3"
@@ -133,6 +185,7 @@
 
         <Button
             android:id="@+id/btnAdd"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/add"
@@ -141,6 +194,7 @@
 
         <Button
             android:id="@+id/btnBlank2"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             tools:layout_editor_absoluteX="99dp"
@@ -148,6 +202,7 @@
 
         <Button
             android:id="@+id/btnDecimal"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_column="0"
@@ -158,6 +213,7 @@
 
         <Button
             android:id="@+id/btnZero"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/_0"
@@ -166,6 +222,7 @@
 
         <Button
             android:id="@+id/btnBlank"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             tools:layout_editor_absoluteX="99dp"
@@ -173,6 +230,7 @@
 
         <Button
             android:id="@+id/btnSubtract"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/subtract"
@@ -181,6 +239,7 @@
 
         <Button
             android:id="@+id/btnEquals"
+            style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:text="@string/equals"
@@ -188,23 +247,5 @@
             tools:layout_editor_absoluteY="335dp" />
 
     </GridLayout>
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp" />
 
 </android.support.constraint.ConstraintLayout>
