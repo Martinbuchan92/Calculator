@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Switch;
 import android.widget.TextView;
 
 
@@ -41,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnSubtract = (Button) findViewById(R.id.btnSubtract);
         Button btnEquals = (Button) findViewById(R.id.btnEquals);
         Button btnClear = (Button) findViewById(R.id.btnClear);
+        Button btnModulo = (Button) findViewById(R.id.btnModulo);
 
         btnOne.setOnClickListener(this);
         btnTwo.setOnClickListener(this);
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnAdd.setOnClickListener(this);
         btnSubtract.setOnClickListener(this);
         btnEquals.setOnClickListener(this);
+        btnModulo.setOnClickListener(this);
 
         txtInput = (EditText) findViewById(R.id.txtInput);
         txtView = (TextView) findViewById(R.id.txtPreviousInput);
@@ -138,9 +139,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 txtInput.setText("");
                 inputText = "";
                 break;
+            case R.id.btnModulo:
+                firstInput = Double.parseDouble(inputText);
+                functionType = "%";
+                String displayModulo = inputText + functionType;
+                txtView.setText(displayModulo);
+                txtInput.setText("");
+                inputText = "";
+                break;
             case R.id.btnEquals:
-                Double calculated = calculate(firstInput, Double.parseDouble(inputText), functionType);
-                txtView.setText(firstInput + functionType + inputText + "=");
+                Double input = Double.parseDouble(inputText);
+                Double calculated = calculate(firstInput, input, functionType);
+                txtView.setText(firstInput + functionType + input+ "=");
                 txtInput.setText(calculated.toString());
                 firstInput = calculated;
                 break;
@@ -168,6 +178,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return result;
             case "-":
                 result = first - second;
+                return result;
+            case "%":
+                result = first % second;
                 return result;
         }
 

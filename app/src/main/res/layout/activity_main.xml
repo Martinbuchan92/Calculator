@@ -37,16 +37,17 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="16dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:columnCount="5"
         android:rowCount="4"
@@ -62,18 +63,24 @@
         <Button
             android:id="@+id/btnSeven"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:text="@string/_7"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="335dp"
-            tools:targetApi="lollipop" />
+            tools:targetApi="lollipop"
+            />
 
         <Button
             android:id="@+id/btnEight"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:text="@string/_8"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="335dp"
@@ -82,8 +89,10 @@
         <Button
             android:id="@+id/btnNine"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:text="@string/_9"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="335dp"
@@ -110,8 +119,10 @@
         <Button
             android:id="@+id/btnFour"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:layout_column="0"
             android:layout_row="1"
             android:text="@string/_4"
@@ -121,8 +132,10 @@
         <Button
             android:id="@+id/btnFive"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:text="@string/_5"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="335dp" />
@@ -130,8 +143,10 @@
         <Button
             android:id="@+id/btnSix"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:text="@string/_6"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="335dp" />
@@ -157,8 +172,10 @@
         <Button
             android:id="@+id/btnOne"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:layout_column="0"
             android:layout_row="2"
             android:text="@string/_1"
@@ -168,8 +185,10 @@
         <Button
             android:id="@+id/btnTwo"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:text="@string/_2"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="335dp" />
@@ -177,8 +196,10 @@
         <Button
             android:id="@+id/btnThree"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:text="@string/_3"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="335dp" />
@@ -203,8 +224,10 @@
         <Button
             android:id="@+id/btnDecimal"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:layout_column="0"
             android:layout_row="3"
             android:text="@string/decimal"
@@ -214,8 +237,10 @@
         <Button
             android:id="@+id/btnZero"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             android:text="@string/_0"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="335dp" />
@@ -223,8 +248,10 @@
         <Button
             android:id="@+id/btnBlank"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="335dp" />
 
