@@ -62,7 +62,9 @@
         app:layout_constraintTop_toBottomOf="@+id/txtInput"
         tools:layout_constraintTop_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0">
 
         <Button
             android:id="@+id/btnSeven"
@@ -231,15 +233,6 @@
             tools:layout_editor_absoluteY="335dp" />
 
         <Button
-            android:id="@+id/btnBlank2"
-            style="@android:style/Widget.Material.Button.Borderless"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="335dp" />
-
-        <Button
             android:id="@+id/btnDecimal"
             style="@android:style/Widget.Material.Button.Borderless"
             android:layout_column="0"
@@ -290,8 +283,10 @@
             android:id="@+id/btnEquals"
             style="@android:style/Widget.Material.Button.Borderless"
             android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_columnWeight="2"
+            android:layout_gravity="fill_horizontal"
             android:text="@string/equals"
+            android:gravity="center"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="335dp" />
